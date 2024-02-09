@@ -14,12 +14,12 @@ class Grinder extends Electronics
 {
 	public Grinder()
 	{
-print “Class Grinder”;
-}
-public void category()
-{
-print “Category: Grinder”;
-}
+	print “Class Grinder”;
+	}
+	public void category()
+	{
+	print “Category: Grinder”;
+	}
 }
 class WetGrinder extends Grinder
 {
