@@ -1,0 +1,44 @@
+//Multilevel Inheritance
+class Electronics
+{
+public Electronics()
+{
+	print “Electronics”;
+}
+public void deviceType(“Class Electronics”);
+{
+	print “Device Type: Electronics”;
+}
+}
+class Grinder extends Electronics
+{
+	public Grinder()
+	{
+print “Class Grinder”;
+}
+public void category()
+{
+print “Category: Grinder”;
+}
+}
+class WetGrinder extends Grinder
+{
+public WetGrinder()
+{
+	print “Class WetGrinder”;
+}
+public void grinding_tech()
+{
+	print “Grinding Technology: WetGrinder”;
+}
+}
+public class MultilevelInheritanceExample
+{
+	public static void main(String[] args)
+	{
+		WetGrinder wt=new WetGrinder();
+		wt.deviceType();
+		wt.category();
+		wt.grinding_tech();
+	}
+}
